@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嗦我牛子</title>
+
+</head>
+<body>
+
+<form action="http://localhost:8080/synthesis" method="POST">
+    <label for="cover">封面文件:</label>
+    <input type="text" id="cover" name="cover" required>
+    <br><br>
+    <label for="content">源文件:</label>
+    <input type="text" id="content" name="content" required>
+    <br><br>
+    <input type="submit" value="合成">
+</form>
+<form action="http://localhost:8080/decompose" method="POST">
+    <label for="cover">文件路径:</label>
+    <input type="text" id="filePath" name="filePath" required>
+    <br><br>
+    <label for="content">密钥1:</label>
+    <input type="text" id="skip" name="skip" required>
+    <br><br>
+    <label for="content">密钥2:</label>
+    <input type="text" id="size" name="size" required>
+    <br><br>
+    <input type="submit" value="分解">
+</form>
+</body>
+</html>

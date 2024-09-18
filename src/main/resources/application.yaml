@@ -1,0 +1,4 @@
+spring:
+  boot:
+    web:
+      open_uri:true
